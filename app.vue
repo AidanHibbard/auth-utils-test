@@ -14,7 +14,7 @@ const updateUser = async () => {
     alert('Please sign in first!')
     return;
   } else {
-    await useRequestFetch()('/api/user/update', {
+    await useRequestFetch()('/api/users/update', {
       method: 'POST',
       body: {
         first: name.first,
