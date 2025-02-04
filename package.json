@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "auth0": "^4.18.0",
+    "nuxt": "latest",
+    "nuxt-auth-utils": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}
