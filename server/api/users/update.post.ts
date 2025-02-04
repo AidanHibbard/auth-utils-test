@@ -3,7 +3,7 @@ import { ManagementClient } from "auth0"
 export default defineEventHandler(async (event) => {
   const session = await requireUserSession(event)
   const body = await readBody(event)
-  const { auth0, session: { password } } = useRuntimeConfig()
+  const { auth0 } = useRuntimeConfig()
 
   const management = new ManagementClient({
     ...auth0
