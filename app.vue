@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-const { user, fetch } = useUserSession()
+const { user, fetch, session } = useUserSession()
 
 const splitName = (name: string): string[] => name.split(' ')
 const [first, last] = user.value?.name ? splitName(user.value.name) : splitName('John Doe')
@@ -18,7 +18,7 @@ const updateUser = async () => {
       method: 'POST',
       body: {
         first: name.first,
-        lastName: name.last,
+        last: name.last,
       },
     })
     await fetch()
